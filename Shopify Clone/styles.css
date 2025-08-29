@@ -1,0 +1,300 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: ShopifySans, Helvetica, Arial, sans-serif;
+}
+
+/* HEADER SECTION */
+header {
+    align-items: center;
+    background-color: #088162;
+    height: 82.5vh;
+}
+
+.centre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    height: 100px;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: white;
+}
+
+.big-upper-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 64px;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+}
+
+.txt-worldwide {
+    height: 60px;
+    font-size: 1.25rem;
+    color: white;
+}
+
+/* EMAIL INPUT */
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.email-form input[type="email"] {
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+    width: 300px;
+}
+
+.email-form button {
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.email-form button:hover {
+    background-color: #333;
+}
+
+.disclaimer {
+    font-size: 14px;
+    color: #d1d1d1;
+    margin-top: 10px;
+}
+
+/* IMAGE */
+.img-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box {
+    height: 350px;
+    width: 449px;
+    background-color: white;
+    margin-top: 15px;
+    background-color: aqua;
+}
+
+.main-img {
+    height: 350px;
+    background-size: cover;
+}
+
+/* MAIN SECTION */
+.gap {
+    background-color: rgb(255 255 255);
+    height: 30vh;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    height: 30vh;
+}
+
+.nav-text h2 {
+    height: 45px;
+    line-height: 2rem;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+.nav-text p {
+    font-size: 1.125rem;
+    line-height: 1.625;
+}
+
+.text {
+    width: 367px;
+}
+
+.nav-logo {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    row-gap: 2.5rem;
+}
+
+.logo-box {
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    max-width: 125%;
+}
+
+/* FOOTER */
+.foot-1 {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 8rem;
+}
+
+.foot-text {
+    margin-left: 3.125rem;
+    margin-right: 3.125rem;
+    width: auto;
+    height: 146px;
+}
+
+.foot-upper-text {
+    color: #000000;
+    margin: 0 0 16px;
+    font-size: 1.25rem;
+}
+
+.foot-lower-text {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -.02rem;
+    line-height: 1.625rem;
+}
+
+.btn button {
+    border: solid 2px black;
+    padding: 15px 30px;
+    font-size: 16px;
+    border: none;
+    border-radius: 50px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+.btn button:hover {
+    background-color: #088162;
+}
+
+.foot-2 {
+    display: flex;
+    justify-content: right;
+    gap: 30px;
+}
+
+/* RESPONSIVE STYLES */
+@media screen and (max-width: 1200px) {
+    .nav-logo {
+        grid-template-columns: repeat(3, auto);
+    }
+
+    .box {
+        height: 300px;
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        height: 70vh;
+    }
+
+    .logo {
+        font-size: 2rem;
+    }
+
+    .big-upper-text {
+        font-size: 1.25rem;
+    }
+
+    .txt-worldwide {
+        font-size: 1rem;
+    }
+
+    .email-form input[type="email"] {
+        width: 250px;
+    }
+
+    .nav-text {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .text {
+        width: auto;
+        margin-bottom: 20px;
+    }
+
+    .nav-logo {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    .foot-1 {
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+    }
+
+    .foot-text {
+        height: auto;
+    }
+
+    .foot-2 {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .big-upper-text {
+        font-size: 1rem;
+    }
+
+    .txt-worldwide {
+        font-size: 0.875rem;
+    }
+
+    .email-form input[type="email"] {
+        width: 200px;
+    }
+
+    .email-form button {
+        padding: 10px 20px;
+    }
+
+    .box {
+        height: 250px;
+        width: 300px;
+    }
+
+    .nav-text h2 {
+        font-size: 1.25rem;
+    }
+
+    .nav-text p {
+        font-size: 1rem;
+    }
+
+    .nav-logo {
+        grid-template-columns: repeat(1, auto);
+    }
+
+    .btn button {
+        padding: 10px 20px;
+    }
+}
