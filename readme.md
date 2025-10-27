@@ -11,7 +11,8 @@ Each folder contains the HTML, CSS (and optionally assets like images) for one s
 ## 🛠 Technologies Used
 
 - HTML5  
-- CSS3 (Flexbox, Grid, Media Queries)  
+- CSS3 (Flexbox, Grid, Media Queries) 
+- Javascript 
 - (Optionally you can add JavaScript later or integrate frameworks if you expand)
 
 ## 🚀 Getting Started / Usage
