@@ -1,0 +1,44 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* So heading stays on top */
+  justify-content: center; /* Vertically center */
+  align-items: center;     /* Horizontally center */
+  background-color: #111;
+  color: white;
+  font-family: Arial, sans-serif
+}
+
+.heading {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+.box {
+  display: flex;
+  gap: 20px; /* Space between buttons */
+}
+
+.button {
+  padding: 50px 50px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.button:nth-child(1) { background-color: red; }
+.button:nth-child(2) { background-color: yellow; color: black; }
+.button:nth-child(3) { background-color: green; }
+.button:nth-child(4) { background-color: grey; }
+
+.button:hover {
+  transform: scale(1.1);
+}

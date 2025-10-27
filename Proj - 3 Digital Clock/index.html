@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        body {
+            background: black;
+      color: lime;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .center {
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 6rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Digital Clock</h1>
+    <div class="center">
+        <div id="clock">Clock</div>
+    </div>
+    <script>
+        function updateClock() {
+            const time = document.querySelector('#clock');
+            const now = new Date();
+
+            // const hours = now.getHours();    // 0–23
+            // const minutes = now.getMinutes(); // 0–59
+            // const seconds = now.getSeconds(); // 0–59
+
+            // time.innerText = `${hours}:${minutes}:${seconds}`
+            time.innerHTML = now.toLocaleTimeString();
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+    </script>
+</body>
+
+</html>
